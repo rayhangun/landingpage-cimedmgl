@@ -75,8 +75,12 @@ main .content .content-description {
 
 main .content .content-description .title {
   margin-block: 1rem;
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3.5rem;
+  line-height: 5rem;
+}
+
+main .content .content-description .title span {
+  color: orange;
 }
 
 main .content .content-description p {
@@ -113,8 +117,8 @@ main .content .content-image {
 }
 
 main .content .content-image img {
-  width: 300px;
-  min-width: 250px;
+  width: 500px;
+  min-width: 450px;
   margin: auto;
 }
 
