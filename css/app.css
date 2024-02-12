@@ -61,6 +61,7 @@ main {
   padding: 2rem 4rem;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 main .content {
@@ -120,6 +121,48 @@ main .content .content-image img {
   width: 500px;
   min-width: 450px;
   margin: auto;
+}
+
+main .proli-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+main .proli-section .article-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+main h2.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .proli-section article {
+  flex: 0.48; /* Adjust the width of each article as needed */
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd; /* Optional border for styling */
+  border-radius: 8px; /* Optional border radius for styling */
+  background-color: #f9f9f9; /* Optional background color for styling */
+}
+
+main .proli-section article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional border radius for styling */
+  margin-bottom: 1rem;
+}
+
+main .new-section article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+main .proli-section article p {
+  font-size: 1rem;
 }
 
 main aside {
