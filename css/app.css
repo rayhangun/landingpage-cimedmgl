@@ -15,7 +15,7 @@ body {
 header.navbar-container {
   width: 100%;
   max-width: 1500px;
-  padding-block: 1rem;
+  padding-block: 0.5rem;
   padding-left: 5%;
   padding-right: 7%;
   margin-inline: auto;
@@ -23,6 +23,10 @@ header.navbar-container {
   justify-content: space-between;
   align-items: center;
   z-index: 9999;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #e9ecef;
 }
 
 header.navbar-container .logo img {
@@ -48,6 +52,7 @@ header.navbar-container .nav-list li a {
   font-weight: 500;
   color: black;
   transition: all 0.2s ease-in-out;
+  line-height: 1.5rem;
 }
 
 header.navbar-container .nav-list li:hover a {
@@ -64,6 +69,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 7rem;
 }
 
 main .content {
@@ -189,6 +195,77 @@ main .mitra-section img {
   height: auto;
   margin: 1rem;
   flex-shrink: 0;
+}
+
+main .tentang-kami-section {
+  max-width: 1500px;
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+main .tentang-kami-section .section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .tentang-kami-section .card-container {
+  max-width: 1500px; /* Adjust the maximum width as needed */
+  margin: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+}
+
+main .tentang-kami-section .card-headmaster {
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  align-items: center; /* Center horizontally */
+  padding: 1.5rem;
+}
+
+main .tentang-kami-section .headmaster-photo {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+main .tentang-kami-section .headmaster-photo img {
+  width: 150px; /* Adjust the width of the headmaster's photo */
+  height: auto;
+  border-radius: 50%;
+  display: block; /* Ensure the image is centered */
+}
+
+main .tentang-kami-section .headmaster-info {
+  text-align: center;
+  margin-bottom: -2rem;
+}
+
+main .tentang-kami-section .card-preface {
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+main .tentang-kami-section .facilities-subsection {
+  margin-top: 2rem;
+}
+
+main .tentang-kami-section .facilities-subsection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main .tentang-kami-section .facilities-subsection img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 main aside {
