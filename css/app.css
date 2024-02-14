@@ -307,6 +307,44 @@ main aside .social-media li a:hover {
   color: orange;
 }
 
+/* WhatsApp Floating Button */
+.whatsapp-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  animation: colorChange 0.5s infinite alternate; /* Add animation for color change */
+}
+
+.whatsapp-floating i {
+  font-size: 45px;
+  color: white;
+}
+
+.whatsapp-floating:hover {
+  background-color: orange;
+  animation: none; /* Disable the animation on hover */
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: green;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+
 /* Medium devices (768px dan di bawahnya) */
 @media screen and (max-width: 768px) {
   header.navbar-container {
