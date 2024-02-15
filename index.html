@@ -36,9 +36,9 @@
       <nav class="nav-list">
         <ul>
           <li><a href="#">Beranda</a></li>
-          <li><a href="#">PPDB</a></li>
+          <li><a href="#kontak-info-ppdb">Kontak dan Info PPDB</a></li>
           <li><a href="#tentang-kami">Tentang Kami</a></li>
-          <li><a href="#">Kontak</a></li>
+          <li><a href="#">Berita Sekolah</a></li>
         </ul>
       </nav>
     </header>
@@ -61,7 +61,11 @@
             ragu lagi untuk bergabung menjadi bagian dari Keluarga Besar SMK
             Citra Medika Kota Magelang.
           </p>
-          <button onclick="location.href='https://api.whatsapp.com/send?phone=6285643192482&text=Assalamu%27alaykum%20admin%2C%20mohon%20info%20tentang%20PPDB%20SMK%20Citra%20Medika%20Kota%20Magelang%20ya...', '_blank';">Daftar Sekarang</button>
+          <button
+            onclick="location.href='https://api.whatsapp.com/send?phone=6285643192482&text=Assalamu%27alaykum%20admin%2C%20mohon%20info%20tentang%20PPDB%20SMK%20Citra%20Medika%20Kota%20Magelang%20ya...', '_blank';"
+          >
+            Daftar Sekarang
+          </button>
         </div>
         <div class="content-image">
           <img src="img/prestasi.png" alt="SMK Citra Medika Kota Magelang" />
@@ -145,39 +149,38 @@
         <!-- Headmaster's Preface -->
         <div class="card-container">
           <div class="card-headmaster">
-              <div class="headmaster-photo">
-                <img
-                  src="img/foto_kepsek.png"
-                  alt="SMK Citra Medika Kota Magelang"
-                />
-              </div>
-              <div class="headmaster-info">
-                <h3>Veronica Rani, S.Pd., Gr., M.Pd.</h3>
-                <p>Kepala Sekolah</p>
-              </div>
+            <div class="headmaster-photo">
+              <img
+                src="img/foto_kepsek.png"
+                alt="SMK Citra Medika Kota Magelang"
+              />
             </div>
-            <div class="card-preface">
-              <p>
-                <em>Assalamu'alaykum warohmatullahi wabarokatuh</em>
-                <br />
-                Puji syukur kami panjatkan kepada Allah Subhanahu wa Ta'ala
-                karena rahmat dan hidayah-Nya website SMK Citra Medika Kota
-                Magelang dapat terbit. Website ini dibuat dengan tujuan untuk
-                memberikan informasi kepada masyarakat mengenai berbagai
-                kegiatan yang dilakukan oleh SMK Citra Medika Kota Magelang.
-                Selain itu, website ini juga diharapkan dapat menjadi sarana
-                informasi dan komunikasi antara pihak sekolah dengan siswa,
-                alumni, guru, karyawan, dan para <i>stakeholder</i> yang
-                memiliki kepedulian, wewenang, dan tanggung jawab untuk
-                memajukan SMK Citra Medika Kota Magelang. Akhir kata, kami
-                mengharapkan masukan dari berbagai pihak agar website ini dapat
-                terus berkembang dan semakin baik lagi kedepannya.
-                <em
-                  >Billahi taufik wal hidayah. Wassalamu'alaykum warohmatullahi
-                  wabarokatuh.</em
-                >
-              </p>
+            <div class="headmaster-info">
+              <h3>Veronica Rani, S.Pd., Gr., M.Pd.</h3>
+              <p>Kepala Sekolah</p>
             </div>
+          </div>
+          <div class="card-preface">
+            <p>
+              <em>Assalamu'alaykum warohmatullahi wabarokatuh</em>
+              <br />
+              Puji syukur kami panjatkan kepada Allah Subhanahu wa Ta'ala karena
+              rahmat dan hidayah-Nya website SMK Citra Medika Kota Magelang
+              dapat terbit. Website ini dibuat dengan tujuan untuk memberikan
+              informasi kepada masyarakat mengenai berbagai kegiatan yang
+              dilakukan oleh SMK Citra Medika Kota Magelang. Selain itu, website
+              ini juga diharapkan dapat menjadi sarana informasi dan komunikasi
+              antara pihak sekolah dengan siswa, alumni, guru, karyawan, dan
+              para <i>stakeholder</i> yang memiliki kepedulian, wewenang, dan
+              tanggung jawab untuk memajukan SMK Citra Medika Kota Magelang.
+              Akhir kata, kami mengharapkan masukan dari berbagai pihak agar
+              website ini dapat terus berkembang dan semakin baik lagi
+              kedepannya.
+              <em
+                >Billahi taufik wal hidayah. Wassalamu'alaykum warohmatullahi
+                wabarokatuh.</em
+              >
+            </p>
           </div>
         </div>
 
@@ -191,6 +194,72 @@
         </div>
       </section>
       <!-- Tentang Kami end -->
+
+      <!-- Kontak Kami Section -->
+      <section class="kontak-section" id="kontak-info-ppdb">
+        <h2 class="section-title">Kontak dan Info PPDB</h2>
+        <p class="section-text">
+          Pendaftaran Siswa Baru "PPDB" dapat dilakukan secara
+          <i>online</i> dengan mengisi form dibawah ini <br />atau datang
+          langsung ke SMK Citra Medika Kota Magelang.
+        </p>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3>Formulir PPDB Online</h3>
+            <form
+              action="your_whatsapp_link_here"
+              method="POST"
+              target="_blank"
+            >
+              <label for="name">Nama Anda:</label>
+              <input type="text" name="name" placeholder="Nama Anda" required />
+
+              <label for="whatsapp">Nomor WA/HP:</label>
+              <input
+                type="text"
+                name="whatsapp"
+                placeholder="Nomor WhatsApp"
+                required
+              />
+
+              <label for="school">Asal Sekolah:</label>
+              <input
+                type="text"
+                name="school"
+                placeholder="Asal Sekolah"
+                required
+              />
+
+              <label for="major">Pilih Program Keahlian:</label>
+              <select name="major" required>
+                <option value="" disabled selected>Program Keahlian</option>
+                <option value="farmasi">Farmasi Klinis dan Komunitas</option>
+                <option value="keperawatan">
+                  Asisten Keperawatan dan Caregiver
+                </option>
+              </select>
+
+              <button type="submit">Daftar Sekarang</button>
+            </form>
+          </div>
+
+          <!-- Google Maps -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15823.121332037439!2d110.2114622!3d-7.48949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8f69e002c077%3A0xce5a73e2e0776aa8!2sSMK%20Citra%20Medika%20Kota%20Magelang!5e0!3m2!1sen!2sid!4v1707966386074!5m2!1sen!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
 
       <aside>
         <div class="social-media">
@@ -211,10 +280,14 @@
         </div>
       </aside>
     </main>
-    
+
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-floating">
-      <a href="https://api.whatsapp.com/send?phone=6285643192482&text=Assalamu%27alaykum%20admin,%20mohon%20info%20tentang%20PPDB%20SMK%20Citra%20Medika%20Kota%20Magelang%20ya..." target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://api.whatsapp.com/send?phone=6285643192482&text=Assalamu%27alaykum%20admin,%20mohon%20info%20tentang%20PPDB%20SMK%20Citra%20Medika%20Kota%20Magelang%20ya..."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
