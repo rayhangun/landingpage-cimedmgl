@@ -41,6 +41,23 @@
           <li><a href="#">Berita Sekolah</a></li>
         </ul>
       </nav>
+
+      <!-- Mobile Navigation Toggle -->
+      <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <nav class="mobile-nav-list">
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#kontak-info-ppdb">Kontak dan Info PPDB</a></li>
+          <li><a href="#tentang-kami">Tentang Kami</a></li>
+          <li><a href="#">Berita Sekolah</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <!-- Hero Section start -->
@@ -218,12 +235,21 @@
               target="_blank"
             >
               <label for="name">Nama Anda:</label>
-              <input type="text" name="name" placeholder="Nama Anda" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                placeholder="Nama Anda"
+                required
+              />
 
               <label for="whatsapp">Nomor WA/HP:</label>
               <input
-                type="text"
+                type="tel"
+                id="whatsapp"
                 name="whatsapp"
+                autocomplete="tel"
                 placeholder="Nomor WhatsApp"
                 required
               />
@@ -231,13 +257,15 @@
               <label for="school">Asal Sekolah:</label>
               <input
                 type="text"
+                id="school"
                 name="school"
+                autocomplete="on"
                 placeholder="Asal Sekolah"
                 required
               />
 
               <label for="major">Pilih Program Keahlian:</label>
-              <select name="major" required>
+              <select name="major" id="major" required>
                 <option value="" disabled selected>
                   Pilih Program Keahlian
                 </option>
@@ -328,5 +356,18 @@
       </div>
     </footer>
     <!-- Footer end -->
+
+    <!-- My JavaScript start -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+        const mobileNavList = document.querySelector(".mobile-nav-list");
+
+        mobileMenuToggle.addEventListener("click", function () {
+          mobileNavList.classList.toggle("show");
+        });
+      });
+    </script>
+    <!-- My JavaScript end -->
   </body>
 </html>
