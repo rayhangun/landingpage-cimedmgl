@@ -269,6 +269,10 @@ main .tentang-kami-section .facilities-subsection img {
 }
 
 /* Contact Section */
+main .kontak-section {
+  padding: 7rem 0;
+}
+
 main .kontak-section .section-title,
 main .kontak-section .section-text {
   text-align: center;
